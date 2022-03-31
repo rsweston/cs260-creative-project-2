@@ -1,0 +1,140 @@
+/* Color Palette:
+ * lavender    - #C2ADB9  // represents business
+ * green grey  - #C7D1CC  // complimentary
+ * grey        - #7A666A  // grounding, for accents
+ * dark        - #382E31  // paragraph text
+ * light       - #EEFCF3  // backgrounds & supporting elements
+
+/* Fonts:
+ * sans-serif  - Roboto       // headers, non-body text
+ * serif       - Merriweather // body text
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  color: #382E31;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  color: #382E31;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #EEFCF3;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #382E31;
+  padding: 20px 0;
+}
+
+.header h1 {
+  font-size: 2em;
+  letter-spacing: 1px;
+  color: #EEFCF3;
+}
+
+/* CONTENT */
+.content {
+  margin-top: 50px;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quoteSubmit {
+  margin: 25px 0;
+  padding: 25px 40px;
+  border-radius: 8px;
+  border: 2px solid #7A666A;
+  background-color: #C2ADB9;
+  color: #382E31;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+#quoteSubmit:hover {
+  background-color: #7A666A;
+  color: #EEFCF3;
+  transition-duration: 0.4s;
+}
+
+#quoteResults {
+  margin-top: 50px;
+}
+
+blockquote {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #C7D1CC;
+  font-size: 1.25em;
+  letter-spacing: .1px;
+  line-height: 1.4;
+}
+
+footer {
+  margin-top: 10px;
+  text-indent: 20px;
+  font-style: italic;
+  letter-spacing: .15px;
+  line-height: 1.4;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding: 50px 0 8px 0;
+}
+
+.footer a {
+  font-size: 0.8em;
+  color: #7A666A;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #C2ADB9;
+  text-decoration: underline;
+}
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 961px) {
+
+  /* HEADER */
+  .header {
+    padding: 30px 0;
+  }
+
+  .header h1 {
+    font-size: 3em;
+  }
+
+  /* CONTENT */
+  .content {
+    width: 900px;
+  }
+
+  blockquote {
+    padding: 30px;
+  }
+}
